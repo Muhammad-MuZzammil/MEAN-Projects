@@ -1,0 +1,48 @@
+<form class="ui form" style="background-color : Teal">
+  <div class="ui labeled input" style= "margin : 20px 0 0 380px;width : 385px;">
+  <div class="ui label">
+    Student Name
+  </div>
+  <input type="text" name="stu-name" #stuName>
+</div>
+
+<div class="ui labeled input" style= "margin : 20px 0 0 445px; width : 275px;">
+  <div class="ui label">
+    Father Name
+  </div>
+  <input type="text" name="stu-name" #fatherName>
+</div>
+
+
+<div class="ui labeled input" style="margin : 20px 0 0 485px; width : 215px;">
+  <div class="ui label">
+     Student ID
+  </div>
+  <input type="text" name="stu-name" #stuID>
+</div>
+
+  <div class="ui labeled input" style= "margin : 20px 0 0 535px;width : 125px;">
+  <div class="ui label">
+    Student Age
+  </div>
+  <input type="text" name="stu-name" #stuAge>
+</div>
+  
+  <div class="ui form" style=" margin : 20px 0 0 580px;width : 130px;">
+  <div class="field" >
+    
+    <select class="ui dropdown" >
+      <option  value="">Gender</option>
+      <option value="1" #male>Male</option>
+      <option value="0"#Female>Female</option>
+    </select>
+  </div>
+</div>
+  
+ 
+<button (click)="addStudent()" class="ui basic button" type="submit" style= "margin : 20px 0 0 620px; background:black ! important;  color: white ! important ;width : 60px; border-radius : 20px; text-align: center">
+  <i class="icon user"></i>
+  Add 
+</button> 
+  
+ </form>
