@@ -38,7 +38,7 @@ class NewStudent{
 export class MainComponent{
 	
 	addStudent(stuName:HTMLInputElement,fatherName:HTMLInputElement,stuID:HTMLInputElement,stuAge:HTMLInputElement,gender:HTMLSelectElement){
-		console.log(`Adding StudentName: ${stuName.value} , FatherName: ${fatherName.value} , StudentID: ${stuName.value} `)
+		console.log(`Adding StudentName: ${stuName.value} , FatherName: ${fatherName.value} , Student ID: ${stuID.value} Student Age: ${stuAge.value} , Gender: ${gender.value } `)
 	}
 	
 }

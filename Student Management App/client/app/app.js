@@ -30,7 +30,7 @@ System.register(["angular2/core"], function(exports_1) {
                 function MainComponent() {
                 }
                 MainComponent.prototype.addStudent = function (stuName, fatherName, stuID, stuAge, gender) {
-                    console.log("Adding StudentName: " + stuName.value + " , FatherName: " + fatherName.value + " , StudentID: " + stuName.value + " ");
+                    console.log("Adding StudentName: " + stuName.value + " , FatherName: " + fatherName.value + " , Student ID: " + stuID.value + " Student Age: " + stuAge.value + " , Gender: " + gender.value + " ");
                 };
                 MainComponent = __decorate([
                     core_1.Component({

@@ -31,16 +31,16 @@
   <div class="ui form" style=" margin : 20px 0 0 580px;width : 130px;">
   <div class="field" >
     
-    <select class="ui dropdown" >
-      <option  value="">Gender</option>
-      <option value="1" #male>Male</option>
-      <option value="0"#Female>Female</option>
+    <select class="ui dropdown" #gender >
+      <option  value="" >Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
     </select>
   </div>
 </div>
   
  
-<button (click)="addStudent()" class="ui basic button" type="submit" style= "margin : 20px 0 0 620px; background:black ! important;  color: white ! important ;width : 60px; border-radius : 20px; text-align: center">
+<button (click)="addStudent(stuName,fatherName,stuID,stuAge,gender)" class="ui basic button" type="submit" style= "margin : 20px 0 0 620px; background:black ! important;  color: white ! important ;width : 60px; border-radius : 20px; text-align: center">
   <i class="icon user"></i>
   Add 
 </button> 
