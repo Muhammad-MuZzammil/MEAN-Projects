@@ -1,37 +1,38 @@
 <form class="ui form" style="background-color : Teal">
+  
   <div class="ui labeled input" style= "margin : 20px 0 0 380px;width : 385px;">
   <div class="ui label">
     Student Name
   </div>
-  <input type="text" name="stu-name" #stuName>
+  <input type="text" name="stu-name" id="firstName" #stuName>
 </div>
 
 <div class="ui labeled input" style= "margin : 20px 0 0 445px; width : 275px;">
   <div class="ui label">
     Father Name
   </div>
-  <input type="text" name="stu-name" #fatherName>
+  <input type="text" name="fath-name" id="fatherName" #fatherName>
 </div>
 
 
 <div class="ui labeled input" style="margin : 20px 0 0 485px; width : 215px;">
   <div class="ui label">
-     Student ID
+     Roll Number
   </div>
-  <input type="text" name="stu-name" #stuID>
+  <input type="text" name="roll-num" id="rollNum" #rollNum>
 </div>
 
   <div class="ui labeled input" style= "margin : 20px 0 0 535px;width : 125px;">
   <div class="ui label">
     Student Age
   </div>
-  <input type="text" name="stu-name" #stuAge>
+  <input type="text" name="stu-age" id="stuAge" #stuAge>
 </div>
   
   <div class="ui form" style=" margin : 20px 0 0 580px;width : 130px;">
   <div class="field" >
     
-    <select class="ui dropdown" #gender >
+    <select class="ui dropdown" id="gender" #gender >
       <option  value="" >Gender</option>
       <option value="Male">Male</option>
       <option value="Female">Female</option>
@@ -40,9 +41,30 @@
 </div>
   
  
-<button (click)="addStudent(stuName,fatherName,stuID,stuAge,gender)" class="ui basic button" type="submit" style= "margin : 20px 0 0 620px; background:black ! important;  color: white ! important ;width : 60px; border-radius : 20px; text-align: center">
+<button (click)="addStudent(stuName,fatherName,rollNum,stuAge,gender)" class="ui basic button" type="submit" style= "margin : 20px 0 0 620px; background:black ! important;  color: white ! important ;width : 60px; border-radius : 20px; text-align: center">
   <i class="icon user"></i>
   Add 
 </button> 
+
   
  </form>
+ 
+ <table class="ui inverted teal  table">
+  <thead style="background-color: black;">
+    
+      <th>Student Name</th>
+      <th>Father Name</th>
+      <th>Roll Number</th>
+      <th>Student Age</th>
+      <th> Gender</th>
+      <th> Action</th>
+    
+    
+  </thead>
+ <tbody>
+ <tr class="myClass" *ngFor = "#stu of students" [student]="stu" (deleteEvent)="deleteStu($event)" (UpdateRecord)="UpdateRec($event)" ></tr>
+ 
+ 
+ 
+ </tbody>
+</table>
